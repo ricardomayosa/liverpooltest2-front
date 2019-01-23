@@ -28,7 +28,7 @@ export default class Home extends Component {
 		const baseURL =
 			window.location.hostname === 'localhost'
 				? 'http://localhost:3000'
-				: 'https://liverpooltest-2.herokuapp.com/';
+				: 'https://liverpooltest-2.herokuapp.com';
 		axios.get(baseURL).then(res => {
 			const searchHistory = res.data.queries;
 			this.setState({ searchHistory });
@@ -96,19 +96,6 @@ export default class Home extends Component {
 								defaultValue={this.state.article}
 								onChange={this.handleChange}
 							/>
-							{/* <div className="input-group-append">
-								<select
-									id="lang"
-									onChange={this.setSelectedInput}
-								>
-									<option value="">
-										Historial de busqueda
-									</option>
-									<option value="select">Select</option>
-									<option value="Java">Java</option>
-									<option value="C++">C++</option>
-								</select>
-							</div> */}
 						</div>
 					</div>
 					<button type="submit" className="btn btn-primary">
