@@ -49,7 +49,7 @@ export default class Home extends Component {
 	getArticles() {
 		axios
 			.get(
-				`http://www.liverpool.com.mx/tienda?s=${
+				`https://www.liverpool.com.mx/tienda?s=${
 					this.state.query
 				}&d3106047a194921c01969dfdec083925=json `,
 			)
