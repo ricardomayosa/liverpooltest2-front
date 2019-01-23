@@ -28,7 +28,7 @@ export default class Home extends Component {
 		const baseURL =
 			window.location.hostname === 'localhost'
 				? 'http://localhost:3000'
-				: 'https://liverpooltest-1.herokuapp.com';
+				: 'https://liverpooltest-2.herokuapp.com/';
 		axios.get(baseURL).then(res => {
 			const searchHistory = res.data.queries;
 			this.setState({ searchHistory });
