@@ -32,7 +32,7 @@ export default class Home extends Component {
 		axios.get(baseURL).then(res => {
 			const searchHistory = res.data.queries;
 			this.setState({ searchHistory });
-		});
+		})
 	}
 	setSelectedInput = query => {
 		this.setState({ query }, async () => {
